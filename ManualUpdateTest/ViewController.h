@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HttpService.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<HttpServiceDelegate>
 
+/**
+ *  报价请求时生成的Tag
+ */
+@property(nonatomic,assign) NSUInteger quoteHttpTag;
+
+/**
+ *  登陆请求时生成的Tag
+ */
+@property(nonatomic,assign) NSUInteger loginHttpTag;
 
 @end
 

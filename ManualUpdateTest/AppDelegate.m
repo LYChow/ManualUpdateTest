@@ -19,10 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
-    [MobClick startWithAppkey:@"55ffcc25e0f55afd39001b9b"];
-     [[MCVersionUpdate shareManager] onlineUpdateParameters];
-    [MobClick updateOnlineConfig];
+     #warning 实现了Umeng在线更新的功能
+//    [MobClick startWithAppkey:@"55ffcc25e0f55afd39001b9b"];
+//     [[MCVersionUpdate shareManager] onlineUpdateParameters];
+//    [MobClick updateOnlineConfig];
 
     return YES;
 }

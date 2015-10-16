@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280F8B331BD0FDA900207C3D /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 280F8B321BD0FDA900207C3D /* HttpTool.m */; settings = {ASSET_TAGS = (); }; };
+		281FF79C1BD0D82300AE8AD3 /* HttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 281FF79B1BD0D82300AE8AD3 /* HttpService.m */; settings = {ASSET_TAGS = (); }; };
+		281FF79F1BD0D83100AE8AD3 /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 281FF79E1BD0D83100AE8AD3 /* HttpClient.m */; settings = {ASSET_TAGS = (); }; };
 		2836AACE1BCCE5630060C6C7 /* MCVersionUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2836AACD1BCCE5630060C6C7 /* MCVersionUpdate.m */; settings = {ASSET_TAGS = (); }; };
 		2836AAD11BCDFE9D0060C6C7 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2836AAD01BCDFE9D0060C6C7 /* Reachability.m */; settings = {ASSET_TAGS = (); }; };
 		28A174541BCBC008009DB16A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28A174531BCBC008009DB16A /* main.m */; };
@@ -40,10 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2836AACC1BCCE5630060C6C7 /* MCVersionUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCVersionUpdate.h; sourceTree = "<group>"; };
-		2836AACD1BCCE5630060C6C7 /* MCVersionUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCVersionUpdate.m; sourceTree = "<group>"; };
-		2836AACF1BCDFE9D0060C6C7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		2836AAD01BCDFE9D0060C6C7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		280F8B311BD0FDA900207C3D /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		280F8B321BD0FDA900207C3D /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		281FF79A1BD0D82300AE8AD3 /* HttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpService.h; sourceTree = "<group>"; };
+		281FF79B1BD0D82300AE8AD3 /* HttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpService.m; sourceTree = "<group>"; };
+		281FF79D1BD0D83100AE8AD3 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		281FF79E1BD0D83100AE8AD3 /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
+		2836AACC1BCCE5630060C6C7 /* MCVersionUpdate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCVersionUpdate.h; path = ../MCVersionUpdate.h; sourceTree = "<group>"; };
+		2836AACD1BCCE5630060C6C7 /* MCVersionUpdate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCVersionUpdate.m; path = ../MCVersionUpdate.m; sourceTree = "<group>"; };
+		2836AACF1BCDFE9D0060C6C7 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = ../Reachability.h; sourceTree = "<group>"; };
+		2836AAD01BCDFE9D0060C6C7 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = ../Reachability.m; sourceTree = "<group>"; };
 		28A1744F1BCBC008009DB16A /* ManualUpdateTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManualUpdateTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A174531BCBC008009DB16A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28A174551BCBC008009DB16A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +104,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280F8B3E1BD122EE00207C3D /* updateOnline */ = {
+			isa = PBXGroup;
+			children = (
+				2836AACC1BCCE5630060C6C7 /* MCVersionUpdate.h */,
+				2836AACD1BCCE5630060C6C7 /* MCVersionUpdate.m */,
+				2836AACF1BCDFE9D0060C6C7 /* Reachability.h */,
+				2836AAD01BCDFE9D0060C6C7 /* Reachability.m */,
+			);
+			path = updateOnline;
+			sourceTree = "<group>";
+		};
+		281FF7991BD0D7F900AE8AD3 /* HttpService */ = {
+			isa = PBXGroup;
+			children = (
+				281FF79A1BD0D82300AE8AD3 /* HttpService.h */,
+				281FF79B1BD0D82300AE8AD3 /* HttpService.m */,
+				281FF79D1BD0D83100AE8AD3 /* HttpClient.h */,
+				281FF79E1BD0D83100AE8AD3 /* HttpClient.m */,
+				280F8B311BD0FDA900207C3D /* HttpTool.h */,
+				280F8B321BD0FDA900207C3D /* HttpTool.m */,
+			);
+			path = HttpService;
+			sourceTree = "<group>";
+		};
 		28A174461BCBC008009DB16A = {
 			isa = PBXGroup;
 			children = (
@@ -126,14 +159,12 @@
 				28A174561BCBC008009DB16A /* AppDelegate.m */,
 				28A174581BCBC008009DB16A /* ViewController.h */,
 				28A174591BCBC008009DB16A /* ViewController.m */,
-				2836AACC1BCCE5630060C6C7 /* MCVersionUpdate.h */,
-				2836AACD1BCCE5630060C6C7 /* MCVersionUpdate.m */,
-				2836AACF1BCDFE9D0060C6C7 /* Reachability.h */,
-				2836AAD01BCDFE9D0060C6C7 /* Reachability.m */,
 				28A1745B1BCBC008009DB16A /* Main.storyboard */,
 				28A1745E1BCBC008009DB16A /* Assets.xcassets */,
 				28A174601BCBC008009DB16A /* LaunchScreen.storyboard */,
 				28A174631BCBC008009DB16A /* Info.plist */,
+				280F8B3E1BD122EE00207C3D /* updateOnline */,
+				281FF7991BD0D7F900AE8AD3 /* HttpService */,
 				28A174521BCBC008009DB16A /* Supporting Files */,
 			);
 			path = ManualUpdateTest;
@@ -367,8 +398,11 @@
 				28A1745A1BCBC008009DB16A /* ViewController.m in Sources */,
 				2836AACE1BCCE5630060C6C7 /* MCVersionUpdate.m in Sources */,
 				28A174571BCBC008009DB16A /* AppDelegate.m in Sources */,
+				280F8B331BD0FDA900207C3D /* HttpTool.m in Sources */,
 				28A174541BCBC008009DB16A /* main.m in Sources */,
 				2836AAD11BCDFE9D0060C6C7 /* Reachability.m in Sources */,
+				281FF79F1BD0D83100AE8AD3 /* HttpClient.m in Sources */,
+				281FF79C1BD0D82300AE8AD3 /* HttpService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

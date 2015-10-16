@@ -10,18 +10,51 @@
 
 @interface ViewController ()
 
+@property(nonatomic,strong) HttpService *currentService;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    self.currentService = [[HttpService alloc] init];
+    self.currentService.delegate = self ;
+    
+   self.loginHttpTag= [self.currentService requestLoginWithUserName:@"15678332798" password:@"1" cityId:@"1" isNeedToken:NO andAlertType:AlertFailueType];
+    
+//   self.quoteHttpTag = [self.currentService requestSupplierGoodsInfoBySid:nil isNeedToken:YES andAlertType:AlertFailueType];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+
+
+-(void)requestSuccess:(HttpResponse *)response
+{
+    if (response.httpTag ==_loginHttpTag)
+    {
+        //保存token在本地[NSUserdefault]
+        [[NSUserDefaults standardUserDefaults] setObject:@"" forKey:@"token"];
+    }
+    else if (response.httpTag == _quoteHttpTag)
+    {
+        
+    }
+}
+
+-(void)requestFailue:(HttpResponse *)response
+{
+    if (response.httpTag ==_loginHttpTag)
+    {
+        NSLog(@"----response=%@",response.responseObject);
+    }
+    else if (response.httpTag == _quoteHttpTag)
+    {
+        
+    }
 }
 
 @end
